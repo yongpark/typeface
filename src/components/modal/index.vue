@@ -9,6 +9,7 @@
       <Input
           v-if="isNotDirectChannelType"
           class="chat-name-input"
+          :value="chatName"
           @input="onInput"
       />
       <Dropdown

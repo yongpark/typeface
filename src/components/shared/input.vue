@@ -7,16 +7,14 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
 
 defineOptions({
   name: 'BaseInput'
 })
 
-const value = ref()
-
-const props = defineProps<{
+defineProps<{
   disabled?: boolean;
+  value: string;
 }>()
 
 const emit = defineEmits<{
@@ -24,7 +22,6 @@ const emit = defineEmits<{
 }>()
 
 const onChange = (event) => {
-  value.value = event.target.value
-  emit('input', value.value)
+  emit('input', event.target.value)
 }
 </script>

@@ -18,6 +18,7 @@
           @input="onInput"
           class="message-input"
           :disabled="disabled"
+          :value="message"
       />
       <div
           class="send-button"
@@ -85,7 +86,7 @@ defineOptions({
   name: 'MessagePanel'
 })
 
-const props = defineProps<{
+defineProps<{
   disabled?: boolean;
 }>()
 

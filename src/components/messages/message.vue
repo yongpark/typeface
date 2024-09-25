@@ -47,10 +47,6 @@
 .left-icon {
   margin-right: 10px;
 }
-
-.right-icon {
-  margin-left: 10px;
-}
 </style>
 
 <script setup lang="ts">

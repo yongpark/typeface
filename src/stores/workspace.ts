@@ -4,7 +4,6 @@ import Workspace from "@/factory/workspace";
 import {useUserStore} from "@/stores/user";
 import {useChannelStore} from "@/stores/channel";
 import _ from 'lodash'
-import channel from "@/factory/channel";
 
 export const useWorkspaceStore = defineStore('workspace', () => {
     const currentWorkSpace = ref()

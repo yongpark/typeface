@@ -41,7 +41,7 @@ const props = defineProps<{
   selected: boolean
 }>()
 
-const emits = defineEmits<{
+defineEmits<{
   'select-workspace': [string]
 }>()
 
