@@ -27,7 +27,7 @@
 .dropdown-container {
   width: 100%;
   height: 50px;
-  border: 1px solid gray;
+  border: 1px solid #6D72E9;
   border-radius: 4px;
 }
 
@@ -41,7 +41,7 @@
 
 .dropdown-items-container {
   margin-top: 10px;
-  border-top: 1px solid gray;
+  border-top: 1px solid #6D72E9;
   border-radius: 4px;
 }
 </style>
@@ -101,6 +101,6 @@ const toggleOpen = () => {
 
 const onSelectItem = (item) => {
   emit('select', item)
-  isOpen.value = false
+  toggleOpen()
 }
 </script>

@@ -17,11 +17,11 @@
           :items="workspaceUsers"
           :selected="selectedUsers"
           class="user-dropdown"
-          @open="onUsersOpen"
+          @open="onUsersToggle"
           @select="onUserSelect"
       />
       <Dropdown
-          v-if="selectedUsers.length > 1"
+          v-if="selectedUsers.length > 1 && !isUsersDropdownOpen"
           :type="channelType"
           @select="selectedChatType = $event"
           :selected="selectedChatType"
@@ -60,12 +60,16 @@
   flex-direction: column;
   padding: 20px;
   border-radius: 4px;
+  border: 1px solid #BEBBBB;
 }
 
 .chat-name-input {
   width: 99%;
   margin-bottom: 15px;
   height: 30px;
+  z-index: 1;
+  border: 1px solid #6D72E9;
+  border-radius: 4px;
 }
 
 .user-dropdown {
@@ -95,10 +99,13 @@
 
   .close {
     width: 75px;
+    border: 1px solid #6D72E9;
   }
 
   .create {
     width: 100px;
+    background-color: #6D72E9;
+    color: white;
   }
 }
 </style>
@@ -113,7 +120,6 @@ import _ from "lodash";
 import {ChannelType} from "@/types/channel";
 import Input from "@/components/shared/input.vue";
 import {useChannelStore} from "@/stores/channel";
-import {storeToRefs} from "pinia";
 
 defineOptions({
   name: 'CreateChannelModal'
@@ -150,7 +156,7 @@ const workspaceUsers = computed(() => {
   })
 })
 
-const onUsersOpen = (val) => {
+const onUsersToggle = (val) => {
   isUsersDropdownOpen.value = val
 }
 

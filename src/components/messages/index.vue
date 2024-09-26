@@ -48,10 +48,12 @@
   width: 80%;
   height: 50px;
   z-index: 1;
+  border: 1px solid #6D72E9;
+  border-radius: 4px;
 }
 
 .send-button {
-  border: 1px solid blue;
+  border: 1px solid #6D72E9;
   height: 50px;
   width: 15%;
   display: flex;
@@ -62,7 +64,8 @@
   padding: 1px 2px;
 
   &:hover {
-    background-color: gray;
+    background-color: #6D72E9;
+    color: white;
   }
 }
 </style>

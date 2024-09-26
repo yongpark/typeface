@@ -53,6 +53,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #F0F0F0;
 }
 
 .channels-group-container {
@@ -62,12 +63,31 @@
   padding: 20px;
 }
 
+.channels-group-header {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #6D72E9;
+}
+
 .add-channel-btn {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid #6D72E9;
+  height: 50px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
   cursor: pointer;
+  padding: 1px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: #6D72E9;
+    color: white;
+  }
 }
 </style>
 

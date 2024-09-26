@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+  color: #6D72E9;
 }
 
 .message-user {

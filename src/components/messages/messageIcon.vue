@@ -8,7 +8,7 @@
 
 <style scoped>
 .user-icon {
-  border: 1px solid black;
+  border: 2px solid #6D72E9;
   padding: 5px;
   height: 20px;
   width: 20px;

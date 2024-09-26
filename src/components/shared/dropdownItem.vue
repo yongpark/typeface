@@ -9,9 +9,9 @@
 <style scoped>
   .dropdown-item {
     border-top: none;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-left: 1px solid #6D72E9;
+    border-right: 1px solid #6D72E9;
+    border-bottom: 1px solid #6D72E9;
     height: 35px;
     padding-left: 5px;
     display: flex;
@@ -19,7 +19,8 @@
     cursor: pointer;
 
     &:hover {
-      background-color: gray;
+      background-color: #6D72E9;
+      color: white;
     }
   }
 </style>

@@ -9,7 +9,7 @@
 
 <style scoped>
 .workspace-icon {
-  border: 1px solid black;
+  border: 1px solid #787878;
   padding: 5px;
   height: 20px;
   width: 20px;
@@ -19,12 +19,13 @@
   align-items: center;
 
   &:hover {
-    border: 3px solid black;
+    border: 3px solid #6D72E9;
   }
 }
 
 .selected {
-  border: 1px solid blue;
+  background-color: #6D72E9;
+  color: white;
 }
 </style>
 

@@ -18,6 +18,7 @@
   gap: 20px;
   padding: 20px;
   align-items: center;
+  background-color: #D9D9D9;
 }
 </style>
 

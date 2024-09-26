@@ -1,9 +1,6 @@
 <template>
  <div
      class="app-container"
-     :class="[
-         isModalShowing ? 'modal-open' : ''
-     ]"
  >
    <ModalContainer
        v-if="isModalShowing"
@@ -33,16 +30,12 @@
 
 .workspace-container {
   width: 5%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #BEBBBB;
 }
 
 .channels-container {
   width: 20%;
-  border-right: 1px solid gray;
-}
-
-.modal-open {
-  background-color: rgb(231 229 228);
+  border-right: 1px solid #BEBBBB;
 }
 
 .message-pane {

@@ -23,6 +23,7 @@
 .channel-item {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .channel-name {
